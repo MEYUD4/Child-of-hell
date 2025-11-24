@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Router</title>
-    <script>
-        // Cek status login
-        const logged = localStorage.getItem("loggedIn");
+  <title>Router</title>
+  <script>
+    const logged = localStorage.getItem("loggedIn");
 
-        // Jika belum login → paksa ke login.html
-        if (logged !== "true") {
-            window.location.href = "login.html";
-        } else {
-            // Sudah login → selalu masuk dashboard
-            window.location.href = "dashboard.html";
-        }
-    </script>
+    if (logged !== "true") {
+        // GANTI sesuai nama file login kamu
+        window.location.href = "Login.html";
+    } else {
+        // GANTI sesuai nama file dashboard kamu
+        window.location.href = "dashboard.html";
+    }
+  </script>
 </head>
 <body>
 </body>
